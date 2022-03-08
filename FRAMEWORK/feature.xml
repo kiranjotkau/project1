@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regression">
+<parameter name="url" value="https://www.facebook.com"></parameter>
+ <listeners>
+<listener class-name="commoncode.commonNewTest"></listener>
+
+</listeners>
+<test name="commonNewTest">
+<parameter name="brow" value="edge"></parameter>
+
+<groups>
+<run>
+<include name="Functional"></include>
+</run>
+</groups>
+
+
+
+<classes>
+<class name="regression.propertiesNewTest"></class>
+</classes>
+</test>
+</suite>
